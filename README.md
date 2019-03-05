@@ -25,7 +25,7 @@ If you prefer to use npm the command is `npm install --global expo-cli`.
 
 ## Warnings When Installing Packages
 
-There are a surprising amount of of warnings when building and running the app, because of peer dependencies not being correct. My guess is that the Expo team has a tough time getting all the added React Native libraries to play well together, and this app seems to run fine, so I believe it's safe to ignore the warnings.
+There are a surprising amount of of warnings when building the app, because of peer dependencies not being correct. My guess is that the Expo team has a tough time getting all the added React Native libraries to play well together, and this app seems to run fine, so I believe it's safe to ignore the warnings.
 
 ## Running the App
 
@@ -40,6 +40,36 @@ If you're on a Mac and have Xcode installed, you can run the app using the iOS S
 ```shell
 yarn ios
 ```
+
+## To Do
+
+- The repository started out as mainly a big collection of TypeScript interfaces, and here commas a semicolons are often used interchangeliby. After going back and forth
+
+```typescript
+interface Point {
+  number x;
+  number y;
+}
+
+interface Point {
+  number x,
+  number y
+}
+
+interface Point {
+  number x;
+  number y;
+  test: {
+    string a,
+    string b
+  }
+}
+
+```
+
+StandardJS, Prettier.
+
+-
 
 ## Setting up Expo with TypeScript
 
